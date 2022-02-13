@@ -22,6 +22,3 @@ class DataBase(object):
 
     def update(self, collection, query, new_value):
         self.db[collection].update_one(query, {'$set': new_value})
-
-    #def find_max(self, collection):
-       # self.db[collection].find().max({"id": 2, "name": "nabih"})

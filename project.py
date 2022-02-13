@@ -81,7 +81,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def save_to_db(self, ui):
         new_book = Book(
-            # book_id,
             int(ui.id_input.text()),
             ui.name_input.text(),
             ui.desc_input.text(),
